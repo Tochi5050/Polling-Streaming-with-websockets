@@ -14,4 +14,6 @@ function sendMessage(message){
     return axios.post('http://localhost:3001/messages', message)
 }
 
-export {createMessagingSocket, getMessages, sendMessage}
+module.exports.sendMessage = sendMessage 
+module.exports.getMessages = getMessages
+module.exports.createMessagingSocket = createMessagingSocket
